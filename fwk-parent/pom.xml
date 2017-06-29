@@ -9,7 +9,6 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-
     <artifactId>fwk-parent</artifactId>
     <packaging>pom</packaging>
 
@@ -28,13 +27,27 @@
     </properties>
 
     <dependencies>
+
         <dependency>
-            <groupId>cn.vitem</groupId>
-            <artifactId>fwk-core</artifactId>
-            <version>1.0.1-SNAPSHOT</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
 
     </dependencies>
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>cn.vitem</groupId>
+                <artifactId>fwk-core</artifactId>
+                <version>1.0.1-SNAPSHOT</version>
+            </dependency>
+
+        </dependencies>
+
+
+    </dependencyManagement>
+
 
 
     <build>
