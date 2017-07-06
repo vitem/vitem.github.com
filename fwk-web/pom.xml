@@ -10,11 +10,29 @@
     <artifactId>fwk-web</artifactId>
     <packaging>jar</packaging>
     <name>fwk-web</name>
-   
-    <dependencies>
 
-    </dependencies>
     <build>
         <finalName>fwk-web</finalName>
     </build>
+    <dependencies>
+        <dependency>
+            <groupId>cn.vitem</groupId>
+            <artifactId>fwk-core</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+    </dependencies>
 </project>
+
